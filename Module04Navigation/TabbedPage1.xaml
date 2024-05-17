@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<TabbedPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Module04Navigation.TabbedPage1"
+            Title="Paul Trustan S. Yumang">
+
+    <ContentPage Title="List">
+        
+        <StackLayout>
+            <Label Text="The Strongest List" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" />
+            <ListView x:Name="itemsListView" VerticalOptions="FillAndExpand">
+                <ListView.ItemsSource>
+                    <x:Array Type="{x:Type x:String}">
+                        <x:String>Monster Hunter</x:String>
+                        <x:String>Five Nights At Freddy's</x:String>
+                        <x:String>Minecraft</x:String>
+                    </x:Array>
+                </ListView.ItemsSource>
+            </ListView>
+        </StackLayout>
+    </ContentPage>
+
+    <ContentPage Title="Form">
+
+        <StackLayout>
+            <Label Text="Submission Form" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" />
+            <Entry Placeholder="Enter Something" x:Name="Entry" />
+            <Button Text="Submit" Clicked="OnSubmitClicked" />
+        </StackLayout>
+
+    </ContentPage>
+
+
+    <ContentPage Title="GRID">
+
+        <Grid>
+            <Label Text="Nevermind" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" Grid.Row="0" Grid.Column="0" />
+            <Label Text="HAHAHAHAHA" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" Grid.Row="1" Grid.Column="0" />
+            <Label Text="Im Stupid" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" Grid.Row="1" Grid.Column="1" />
+            <Label Text="Because tonight will be the night" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" Grid.Row="2" Grid.Column="0" />
+            <Label Text="That I will fall for you" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" Grid.Row="2" Grid.Column="1" />
+        </Grid>
+
+    </ContentPage>
+
+</TabbedPage>

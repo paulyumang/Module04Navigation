@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<CarouselPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Module04Navigation.CarouselPage1" Title="Paul Trustan S. Yumang">
+    <ContentPage>
+        <ContentPage.Content Title="Page 1">
+            <StackLayout>
+                <Image Source="Giratina.jpg" Aspect="AspectFit" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" />
+                <Label Text="Dark Shadow" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" />
+            </StackLayout>
+        </ContentPage.Content>
+   </ContentPage>
+
+    <ContentPage Title="Page 2">
+        <ContentPage.Content>
+            <StackLayout>
+                <Label Text="Starters" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" />
+                <ListView>
+                    <ListView.ItemsSource>
+                        <x:Array Type="{x:Type x:String}">
+                            <x:String>Fuecoco</x:String>
+                            <x:String>Quackxly</x:String>
+                            <x:String>Sprigatito</x:String>
+                        </x:Array>
+                    </ListView.ItemsSource>
+                </ListView>
+            </StackLayout>
+        </ContentPage.Content>
+    </ContentPage>
+
+    <ContentPage Title="Page 3">
+        <ContentPage.Content>
+            <StackLayout>
+                <Label Text="User Input Form" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" />
+                <Entry Placeholder="Enter Name" />
+                <Entry Placeholder="Enter Email" />
+                <Button Text="Submit" />
+            </StackLayout>
+        </ContentPage.Content>
+    </ContentPage>
+
+</CarouselPage>
